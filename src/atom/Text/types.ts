@@ -1,4 +1,4 @@
-export interface PropTypes extends TextStyleTypes {
+export interface TextTypes extends TextStyleTypes {
   children: string;
 }
 

@@ -1,6 +1,6 @@
 import { MouseEventHandler } from 'react';
 
-export interface PropTypes extends ButtonStyleTypes {
+export interface ButtonTypes extends ButtonStyleTypes {
   children: string | JSX.Element; // 문자열 외의 값이 들어갈 경우 JSX.Element를 사용
   clickHandler?: MouseEventHandler<HTMLButtonElement>;
   onClick?: MouseEventHandler<HTMLButtonElement>;

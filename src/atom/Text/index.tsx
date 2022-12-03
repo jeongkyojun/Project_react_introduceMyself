@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyledText } from './styles';
-import { PropTypes } from './types';
+import { TextTypes } from './types';
 
-const Text = ({ children, ...cssTypes }: PropTypes) => {
+const Text = ({ children, ...cssTypes }: TextTypes) => {
   return <StyledText {...cssTypes}>{children}</StyledText>;
 };
 export default Text;
