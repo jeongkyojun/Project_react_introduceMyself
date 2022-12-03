@@ -1,21 +1,23 @@
-import React, { ChangeEvent } from "react";
-import Button from "../atom/Button";
+import React, { ChangeEvent } from 'react';
+import Button from '../atom/Button';
 
 const Test = () => {
   const clickEvent = () => {
-    console.log("click");
-  }
+    console.log('click');
+  };
 
-  const changeEvent = (e : ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.name + " : " + e.target.value);
-  }
+  const changeEvent = (e: ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.name + ' : ' + e.target.value);
+  };
 
   return (
     <>
       <h1> test sheet </h1>
-      <Button> hello world </Button>
+      <Button clickHandler={clickEvent} textColor={'green'}>
+        hello world
+      </Button>
     </>
   );
-}
+};
 
 export default Test;
