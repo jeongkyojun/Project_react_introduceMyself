@@ -9,7 +9,7 @@ const Button = ({
   ...cssType
 }: ButtonTypes) => {
   return (
-    <StyledButton onClick={clickHandler} disabled={disabled} {...cssType}>
+    <StyledButton disabled={disabled} {...cssType} onClick={clickHandler}>
       {children}
     </StyledButton>
   );

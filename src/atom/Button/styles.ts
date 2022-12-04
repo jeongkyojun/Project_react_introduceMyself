@@ -3,10 +3,12 @@ import { ButtonStyleTypes } from './types';
 
 export const StyledButton = styled.button<ButtonStyleTypes>`
   ${({ width }) =>
+    width &&
     css`
       width: ${width || 20}rem;
     `}
   ${({ height }) =>
+    height &&
     css`
       height: ${height || 5} rem;
     `}
@@ -18,7 +20,7 @@ export const StyledButton = styled.button<ButtonStyleTypes>`
           border: none;
         `
       : css`
-          background-color: ${backgroundColor || `white`};
+          background-color: ${backgroundColor || `#bcbcbc`};
           border: ${borderColor || `black`};
           ${disabled
             ? 'filter: brightness(80%)'

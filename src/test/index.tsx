@@ -1,19 +1,34 @@
-import React, { ChangeEvent } from 'react';
+import { stringify } from 'querystring';
+import React, { ChangeEvent, useState } from 'react';
 import Button from '../atom/Button';
-import Text from '../atom/Text';
+import Input from '../atom/Input';
 import ButtonGroups from '../molcule/ButtonGroups';
 import { StyledTestDiv } from './styles';
-import { button_list, example_text } from './testExample_text';
+import { button_list } from './testExample_text';
 
 const Test = () => {
+  const [account, setAccount] = useState({
+    str: '',
+  });
+
   const changeEvent = (e: ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.name + ' : ' + e.target.value);
+    setAccount(prev => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
   };
 
   return (
     <StyledTestDiv>
       <h1> test sheet </h1>
-      <div></div>
+      <Button width={10} height={30}>
+        test
+      </Button>
+      <Input name={'str'} changeHandler={changeEvent}></Input>
+      {account.str}
       <ButtonGroups items={button_list} direction={'row'} />
     </StyledTestDiv>
   );
