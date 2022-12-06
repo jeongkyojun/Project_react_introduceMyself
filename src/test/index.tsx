@@ -1,6 +1,7 @@
 import { stringify } from 'querystring';
 import React, { ChangeEvent, useState } from 'react';
 import Button from '../atom/Button';
+import Image from '../atom/Image';
 import Input from '../atom/Input';
 import ButtonGroups from '../molcule/ButtonGroups';
 import { StyledTestDiv } from './styles';
@@ -30,6 +31,7 @@ const Test = () => {
       <Input name={'str'} changeHandler={changeEvent}></Input>
       {account.str}
       <ButtonGroups items={button_list} direction={'row'} />
+      <Image src={`/img/ssafy_logo.png`} alt={`logo`}></Image>
     </StyledTestDiv>
   );
 };
