@@ -3,16 +3,17 @@ import { ButtonStyleTypes } from './types';
 
 export const StyledButton = styled.button<ButtonStyleTypes>`
   ${({ width }) =>
-    width &&
     css`
       width: ${width || 20}rem;
     `}
   ${({ height }) =>
-    height &&
     css`
-      height: ${height || 5} rem;
+      height: ${height || 5}rem;
     `}
-
+  ${({ borderRadius }) =>
+    css`
+      border-radius: ${borderRadius || 1}rem;
+    `}
   ${({ isText, backgroundColor, borderColor, disabled }) =>
     isText
       ? css`

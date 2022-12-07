@@ -5,7 +5,7 @@ export interface ImageTypes extends ImageStyleTypes {
 }
 
 export interface ImageStyleTypes {
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
   clickHandler?: () => void;
 }

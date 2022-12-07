@@ -8,5 +8,8 @@ export const StyledButtonGroups = styled.div<ButtonGroupsStyleTypes>`
       flex-direction: ${direction || 'column'};
     `}
   justify-content: center;
-  gap: 1rem;
+  ${({ gap }) =>
+    css`
+      gap: ${gap || 1}rem;
+    `}
 `;

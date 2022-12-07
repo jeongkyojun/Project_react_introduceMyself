@@ -25,13 +25,13 @@ const Test = () => {
   return (
     <StyledTestDiv>
       <h1> test sheet </h1>
-      <Button width={10} height={30}>
+      <Button width={20} height={5}>
         test
       </Button>
       <Input name={'str'} changeHandler={changeEvent}></Input>
       {account.str}
       <ButtonGroups items={button_list} direction={'row'} />
-      <Image src={`/img/ssafy_logo.png`} alt={`logo`}></Image>
+      <Image width={`5rem`} src={`/img/ssafy_logo.png`} alt={`logo`}></Image>
     </StyledTestDiv>
   );
 };
