@@ -1,5 +1,4 @@
 import { ChangeEvent, ChangeEventHandler, KeyboardEvent } from 'react';
-import { DoubleString, OnlyString } from '../../object/json_object_type';
 
 export interface InputTypes extends InputStyleTypes {
   name: string; // 이름
