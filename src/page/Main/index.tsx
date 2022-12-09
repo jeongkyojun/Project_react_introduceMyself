@@ -11,7 +11,10 @@ const Main = () => {
       <MainHeader>
         <Image src={`/img/user.jpg`} alt={'user'}></Image>
         <TextWrapper>
-          <Text> 제 이름은 정교준 입니다. </Text>
+          <Text isMultiLine>
+            안녕하세요, 하고싶은게 너무많은 프론트엔드 개발자, 제 이름은 정교준
+            입니다.
+          </Text>
         </TextWrapper>
       </MainHeader>
       <ButtonWrapper>
