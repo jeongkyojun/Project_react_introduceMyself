@@ -14,8 +14,9 @@ const InfoHeader = ({ imgSrc, imgAlt }: InfoHeaderTypes) => {
           alt={imgAlt}
           width={`10rem`}
           height={`10rem`}
+          isCircle
         ></Image>
-        <Text size={2} isMultiLine>
+        <Text size={2.4} isMultiLine>
           {my_introduce_start}
         </Text>
       </HeaderWrapper>
