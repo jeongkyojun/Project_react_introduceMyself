@@ -10,11 +10,8 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Routes>
-          <Route path="/" element={<Test />}>
-            {/* 테스트용 라우터 이후에 필요없어지면 main으로 교체예정 */}
-          </Route>
-          {/* <Route path='/' element={<Main></Main>}></Route> */}
-          <Route path="/main" element={<Main></Main>}></Route>
+          <Route path="/" element={<Main></Main>}></Route>
+          <Route path="/test" element={<Test />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

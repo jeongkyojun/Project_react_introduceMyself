@@ -7,7 +7,7 @@ const goToMenu = (link: string) => {
 
 export const button_list = [
   {
-    children: 'test',
+    children: `test`,
     clickHandler: () => goToMenu('web'),
     width: 5,
     height: 10,
