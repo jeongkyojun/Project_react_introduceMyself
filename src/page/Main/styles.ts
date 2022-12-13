@@ -4,6 +4,7 @@ export const StyledMain = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 3rem;
 `;
 
 export const MainHeader = styled.div`

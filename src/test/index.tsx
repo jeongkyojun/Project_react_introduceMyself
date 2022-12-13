@@ -3,6 +3,7 @@ import React, { ChangeEvent, useState } from 'react';
 import Button from '../atom/Button';
 import Image from '../atom/Image';
 import Input from '../atom/Input';
+import List from '../atom/List';
 import ButtonGroups from '../molcule/ButtonGroups';
 import { StyledTestDiv } from './styles';
 import { button_list } from './testExample_text';
@@ -22,16 +23,11 @@ const Test = () => {
     });
   };
 
+  const items = ['가', '나', '다'];
   return (
     <StyledTestDiv>
       <h1> test sheet </h1>
-      <Button width={20} height={5}>
-        test
-      </Button>
-      <Input name={'str'} changeHandler={changeEvent}></Input>
-      {account.str}
-      <ButtonGroups items={button_list} direction={'row'} />
-      <Image width={`5rem`} src={`/img/ssafy_logo.png`} alt={`logo`}></Image>
+      <List items={items}></List>
     </StyledTestDiv>
   );
 };

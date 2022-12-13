@@ -1,12 +1,4 @@
 // 현재는 설명만, 이후 사진을 같이 추가하면서
-export const my_info = {
-  name: `정교준/Kyojun Jung`,
-  age: `1995.06.02/대전광역시`,
-  tel: `010-4927-9576`,
-  Email: `kyojun2002@naver.com`,
-  address: `대전광역시 서구 탄방동`,
-};
-
 export const my_introduce_list = [
   {
     about: `저는 현재 웹 프론트엔드 개발을 베이스로 성장하는 중입니다.`,

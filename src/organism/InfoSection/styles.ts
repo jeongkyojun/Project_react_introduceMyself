@@ -9,11 +9,15 @@ export const StyledInfoSection = styled.div`
 export const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 10rem;
+  width: 20rem;
 `;
 
-export const AboutWrapper = styled.div`
+export const ContentsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 10rem;
+  gap: 1.2rem;
 `;
+
+export const NameAndAge = styled.div``;
+
+export const TelAndAddr = styled.div``;
