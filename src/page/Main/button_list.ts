@@ -7,19 +7,27 @@ const goToMenu = (link: string) => {
 
 export const button_list = [
   {
-    children: `test`,
-    clickHandler: () => goToMenu('web'),
-    width: 5,
-    height: 10,
-    backgroundColor: '#bcbcbc',
-    textColor: 'black',
+    src: `../img/user.jpg`,
+    alt: `web`,
+    link: ``,
+    disabled: false,
   },
   {
-    children: 'test',
-    clickHandler: () => goToMenu('unity'),
-    width: 5,
-    height: 10,
-    backgroundColor: '#bcbcbc',
-    textColor: 'black',
+    src: `../img/user.jpg`,
+    alt: `unity`,
+    link: ``,
+    disabled: true,
+  },
+  {
+    src: `../img/user.jpg`,
+    alt: `C#`,
+    link: ``,
+    disabled: true,
+  },
+  {
+    src: `../img/user.jpg`,
+    alt: `android`,
+    link: ``,
+    disabled: true,
   },
 ];
