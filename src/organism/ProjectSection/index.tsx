@@ -11,9 +11,15 @@ const ProjectSection = ({ items }: ProjectSectionTypes) => {
       <Text size={2}>Projects</Text>
       <hr></hr>
       <ButtonWrapper>
-        {items.map(({ src, alt, link, disabled, ...css }) => {
+        {items.map(({ src, alt, link, disabled, handler, ...css }) => {
           return (
-            <Button height={20} disabled={disabled} isText>
+            <Button
+              height={20}
+              disabled={disabled}
+              isText
+              key={alt}
+              clickHandler={handler}
+            >
               <Image
                 src={src}
                 alt={alt}

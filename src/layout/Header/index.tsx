@@ -7,18 +7,13 @@ const Header = () => {
   const menuList = [
     {
       children: '테스트',
-      clickHandler: ''
-    }
+      clickHandler: '',
+    },
   ];
   return (
     <HeaderWrapper>
-      <StyledHeader/>
-      <MenuWrapper>
-        <ul>
-          <Link to='/'><li>메인</li></Link>
-          <Link to='/test'><li>테스트</li></Link>
-        </ul>
-      </MenuWrapper>
+      <StyledHeader />
+      <MenuWrapper></MenuWrapper>
     </HeaderWrapper>
   );
 };
