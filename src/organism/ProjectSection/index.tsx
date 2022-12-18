@@ -20,13 +20,7 @@ const ProjectSection = ({ items }: ProjectSectionTypes) => {
               key={alt}
               clickHandler={handler}
             >
-              <Image
-                src={src}
-                alt={alt}
-                width={`100%`}
-                height={`100%`}
-                {...css}
-              />
+              <Image src={src} alt={alt} {...css} />
             </Button>
           );
         })}

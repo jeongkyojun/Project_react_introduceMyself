@@ -23,23 +23,24 @@ export const StyledButton = styled.button<ButtonStyleTypes>`
       : css`
           background-color: ${backgroundColor || `#bcbcbc`};
           border: ${borderColor || `black`};
-          ${disabled
-            ? 'filter: brightness(80%)'
-            : `
-            @media(hover: hover) and (pointer: fine) {
-              &:hover {
-                filter: brightness(80%);
-                transition: all 0.1s;
-                box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
-              }
-            }
-            &:active {
-              border-bottom-width: 1px;
-              transition: all 0.1s;
-              box-shadow: none;
-            }
-          `};
         `}
+  ${({ disabled }) =>
+    disabled
+      ? css`'filter: brightness(80%)'`
+      : css`
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              filter: brightness(80%);
+              transition: all 0.1s;
+              box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+            }
+          }
+          &:active {
+            border-bottom-width: 1px;
+            transition: all 0.1s;
+            box-shadow: none;
+          }
+        `};
   ${({ textColor }) =>
     css`
       color: ${textColor || `white`};
