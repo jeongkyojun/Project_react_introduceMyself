@@ -1,4 +1,4 @@
-export const my_introduce_start = `만능 프론트엔드를 꿈꾸는
+export const my_introduce_start = `끊임없는 발전을위해 노력하는
 개발자
 정교준입니다.`;
 

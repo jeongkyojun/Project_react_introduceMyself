@@ -14,3 +14,8 @@ export const IntroWrapper = styled.div`
   display: flex;
   flex-direction: row;
 `;
+
+export const ImageWrapper = styled.div`
+  display: flex;
+  width: 30%;
+`;
