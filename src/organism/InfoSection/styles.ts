@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import AOS from 'aos';
 
 export const StyledInfoSection = styled.div`
   display: flex;

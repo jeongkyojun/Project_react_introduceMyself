@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import List from '../../atom/List';
 import Text from '../../atom/Text';
 import { my_info } from './info';
+import AOS from 'aos';
 import {
   ContentsWrapper,
   InfoWrapper,
@@ -11,8 +12,12 @@ import {
 } from './styles';
 
 const InfoSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <StyledInfoSection>
+    <StyledInfoSection data-aos="fade-up">
       <InfoWrapper>
         <Text size={1.5}>Info</Text>
         <hr></hr>

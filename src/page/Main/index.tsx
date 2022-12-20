@@ -1,4 +1,5 @@
-import React from 'react';
+import Aos from 'aos';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Image from '../../atom/Image';
 import Text from '../../atom/Text';
@@ -11,6 +12,11 @@ import navigator from '../../utils/navigator';
 import { ButtonWrapper, StyledMain } from './styles';
 
 const Main = () => {
+  useEffect(() => {
+    Aos.init();
+    console.log('init success');
+  }, []);
+
   const navigate = useNavigate();
   const button_list = [
     {
@@ -48,7 +54,7 @@ const Main = () => {
       <InfoHeader imgSrc={'../img/user.jpg'} imgAlt={'user'}></InfoHeader>
       <InfoSection></InfoSection>
       <AboutSection></AboutSection>
-      <ProjectSection items={button_list}></ProjectSection>
+      <ProjectSection items={button_list} data-aos="fade-up"></ProjectSection>
     </StyledMain>
   );
 };
