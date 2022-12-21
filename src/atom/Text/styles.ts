@@ -4,7 +4,7 @@ import { TextStyleTypes } from './types';
 export const StyledText = styled.div<TextStyleTypes>`
   ${({ color }) =>
     css`
-      color: ${color || `black`};
+      color: ${color || `white`};
     `}
 
   ${({ size }) =>

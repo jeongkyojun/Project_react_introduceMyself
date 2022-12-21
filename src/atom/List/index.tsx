@@ -7,11 +7,15 @@ import {
 } from './styles';
 import { ListTypes } from './types';
 
-const List = ({ items, isOrder }: ListTypes) => {
+const List = ({ items, isOrder, fontSize }: ListTypes) => {
   return (
     <StyledUnorderList>
       {items.map(item => {
-        return <StyledItem key={item}>{item}</StyledItem>;
+        return (
+          <StyledItem fontSize={fontSize} key={item}>
+            {item}
+          </StyledItem>
+        );
       })}
     </StyledUnorderList>
   );

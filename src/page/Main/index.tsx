@@ -4,10 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import Image from '../../atom/Image';
 import Text from '../../atom/Text';
 import ButtonGroups from '../../molcule/ButtonGroups';
-import AboutSection from '../../organism/AboutSection';
-import InfoHeader from '../../organism/InfoHeader';
-import InfoSection from '../../organism/InfoSection';
-import ProjectSection from '../../organism/ProjectSection';
+import AboutSection from '../../organism/Main/AboutSection';
+import GraduateSection from '../../organism/Main/GraduateSection';
+import InfoHeader from '../../organism/Main/InfoHeader';
+import InfoSection from '../../organism/Main/InfoSection';
+import ProjectSection from '../../organism/Main/ProjectSection';
 import navigator from '../../utils/navigator';
 import { ButtonWrapper, StyledMain } from './styles';
 
@@ -54,6 +55,7 @@ const Main = () => {
       <InfoHeader imgSrc={'../img/user.jpg'} imgAlt={'user'}></InfoHeader>
       <InfoSection></InfoSection>
       <AboutSection></AboutSection>
+      <GraduateSection></GraduateSection>
       <ProjectSection items={button_list} data-aos="fade-up"></ProjectSection>
     </StyledMain>
   );

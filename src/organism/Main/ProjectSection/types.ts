@@ -1,4 +1,4 @@
-import { ImageTypes } from '../../atom/Image/types';
+import { ImageTypes } from '../../../atom/Image/types';
 
 export interface ProjectItemsTypes extends ImageTypes {
   link: string;

@@ -3,4 +3,6 @@ export interface ListTypes extends ListStyleTypes {
   isOrder?: boolean;
 }
 
-export interface ListStyleTypes {}
+export interface ListStyleTypes {
+  fontSize?: number;
+}

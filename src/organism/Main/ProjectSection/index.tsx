@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../../atom/Button';
-import Image from '../../atom/Image';
-import Text from '../../atom/Text';
+import Button from '../../../atom/Button';
+import Image from '../../../atom/Image';
+import Text from '../../../atom/Text';
 import { ButtonWrapper, StyledProjectSection } from './styles';
 import { ProjectSectionTypes } from './types';
 

@@ -6,11 +6,6 @@ export const StyledAbout = styled.div`
   gap: 1rem;
 `;
 
-export const GraduationWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const AboutWrapper = styled.div`
   display: flex;
   flex-direction: column;
