@@ -3,11 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import Button from '../../atom/Button';
 import Image from '../../atom/Image';
 import List from '../../atom/List';
+import Text from '../../atom/Text';
 import {
   ImageWrapper,
   IntroWrapper,
   ProjectWrapper,
   StyledProjectWeb,
+  WrapperHead,
 } from './styles';
 
 const ProjectWeb = () => {
@@ -31,7 +33,6 @@ const ProjectWeb = () => {
     <StyledProjectWeb>
       <Button
         isText
-        textColor="black"
         width={6}
         height={2}
         clickHandler={() => {
@@ -41,7 +42,7 @@ const ProjectWeb = () => {
         뒤로가기
       </Button>
       <ProjectWrapper>
-        <h1> flody </h1>
+        <Text size={2}>flody</Text>
         <hr></hr>
         <IntroWrapper>
           <h2>intro</h2>
@@ -53,7 +54,7 @@ const ProjectWeb = () => {
         </ImageWrapper>
       </ProjectWrapper>
       <ProjectWrapper>
-        <h1> 감기걸리기 딱 좋은 날이네 </h1>
+        <Text size={2}> 감기걸리기 딱 좋은 날이네 </Text>
         <hr></hr>
         <IntroWrapper>
           <h2>intro</h2>
@@ -62,7 +63,10 @@ const ProjectWeb = () => {
         </IntroWrapper>
       </ProjectWrapper>
       <ProjectWrapper>
-        <h1> iNSSA </h1>
+        <WrapperHead>
+        <Image src={`../img/project_iNSSA/inssa_logo.png`} alt={`inssa_logo`} width={`8rem`} height={`6rem`}></Image>
+        <Text size={2}>Project iNSSA</Text>
+        </WrapperHead>
         <hr></hr>
         <IntroWrapper>
           <h2>intro</h2>

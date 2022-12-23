@@ -19,3 +19,9 @@ export const ImageWrapper = styled.div`
   display: flex;
   width: 30%;
 `;
+
+export const WrapperHead = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`

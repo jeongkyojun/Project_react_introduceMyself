@@ -8,5 +8,5 @@ export const StyledProjectSection = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 `;
