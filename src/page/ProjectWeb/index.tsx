@@ -54,7 +54,10 @@ const ProjectWeb = () => {
         </ImageWrapper>
       </ProjectWrapper>
       <ProjectWrapper>
+        <WrapperHead>
+        <Image src={`../img/project_colday/colday_logo.png`} alt={`colday_logo`} width={'16rem'} height={`3rem`}></Image>
         <Text size={2}> 감기걸리기 딱 좋은 날이네 </Text>
+        </WrapperHead>
         <hr></hr>
         <IntroWrapper>
           <h2>intro</h2>
