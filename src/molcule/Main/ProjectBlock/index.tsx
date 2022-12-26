@@ -11,7 +11,9 @@ const ProjectBlock = ({item}:ProjectBlockTypes)=>{
     return(
         <StyledProjectBlock>
             <OptionWrapper>
-                <Image src={src} alt={alt}></Image>
+                {
+                    src&&<Image src={src} alt={alt}></Image>
+                }
                 <Button isText clickHandler={handler}width={10}>
                     <div>{`이동`}<FiArrowRight/></div></Button>
             </OptionWrapper>

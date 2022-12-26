@@ -10,6 +10,7 @@ export const StyledProjectBlock = styled.div`
 export const OptionWrapper = styled.div`
     display:flex;
     flex-direction: column;
+    justify-content: spaced-between;
     width: 10rem;
     height: 10rem;
 `
