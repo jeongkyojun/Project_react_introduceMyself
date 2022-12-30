@@ -23,6 +23,9 @@ const navigator = (navigate: NavigateFunction, param?: NavigateTypes) => {
     mobile: () => {
       navigate(`/mobile`, param);
     },
+    test: ()=>{
+      navigate(`/test`,param);
+    }
   };
 };
 

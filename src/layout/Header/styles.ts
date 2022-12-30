@@ -14,4 +14,10 @@ export const MenuWrapper = styled.ul`
   display: flex;
   flex-direction: row;
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export const StyledMenuItem = styled.li``;

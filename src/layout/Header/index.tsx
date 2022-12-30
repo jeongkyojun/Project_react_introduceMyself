@@ -1,16 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Button from '../../atom/Button';
 import Image from '../../atom/Image';
 import ButtonGroups from '../../molcule/ButtonGroups';
-import { HeaderWrapper, MenuWrapper, StyledHeader } from './styles';
+import navigator from '../../utils/navigator';
+import { ButtonWrapper, HeaderWrapper, MenuWrapper, StyledHeader } from './styles';
 
 const Header = () => {
+
+  const navigate = useNavigate();
+  const moveTest = ()=>{
+    navigator(navigate).test;
+  }
+
   return (
     <HeaderWrapper>
       <StyledHeader />
       <MenuWrapper>
         <img src="https://ghchart.rshah.org/kyojun2002" alt="github" />
       </MenuWrapper>
+      <ButtonWrapper>
+        <Button clickHandler={moveTest}>test로 이동</Button>
+      </ButtonWrapper>
     </HeaderWrapper>
   );
 };

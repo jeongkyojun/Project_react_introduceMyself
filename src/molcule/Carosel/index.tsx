@@ -16,7 +16,7 @@ import { CaroselTypes } from './types';
  *
  * @author jojo
  */
-const FavoriteBusCarosel = ({
+const Carosel = ({
   busNum,
   previousBusStop,
   nextBusStop,
@@ -35,7 +35,7 @@ const FavoriteBusCarosel = ({
       </TextFlexContainer>
       {busLikes?.length ? (
         <FlexContainer>
-          <FaChevronLeft size={30} onClick={() => clickBusNumHandler('left')} />
+          <FaChevronLeft size={30} />
           <FavoriteBusContainer>
             {/* <FavoriteBusHeader
               busNum={busNum}
@@ -53,7 +53,6 @@ const FavoriteBusCarosel = ({
           </FavoriteBusContainer>
           <FaChevronRight
             size={30}
-            onClick={() => clickBusNumHandler('right')}
           />
         </FlexContainer>
       ) : (
@@ -65,4 +64,4 @@ const FavoriteBusCarosel = ({
   );
 };
 
-export default FavoriteBusCarosel;
+export default Carosel;

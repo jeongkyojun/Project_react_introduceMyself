@@ -5,6 +5,7 @@ import Image from '../atom/Image';
 import Input from '../atom/Input';
 import List from '../atom/List';
 import ButtonGroups from '../molcule/ButtonGroups';
+import Carosel from '../molcule/Carosel';
 import { StyledTestDiv } from './styles';
 import { button_list } from './testExample_text';
 
@@ -28,6 +29,7 @@ const Test = () => {
     <StyledTestDiv>
       <h1> test sheet </h1>
       <List items={items}></List>
+      <Carosel></Carosel>
     </StyledTestDiv>
   );
 };
