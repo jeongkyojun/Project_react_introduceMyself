@@ -14,7 +14,7 @@ const ProjectSection = ({ items }: ProjectSectionTypes) => {
       <ButtonWrapper>
         {items.map((item) => {
           return (
-            <ProjectBlock item={item}></ProjectBlock>
+            <ProjectBlock item={item} key={item.alt}></ProjectBlock>
           );
         })}
       </ButtonWrapper>

@@ -7,7 +7,7 @@ import { ExplainWrapper, OptionWrapper, StyledProjectBlock } from "./styles";
 import { ProjectBlockTypes } from "./types";
 
 const ProjectBlock = ({item}:ProjectBlockTypes)=>{
-    const {src, alt, link, handler} = item;
+    const {src, alt, link, handler, explain} = item;
     return(
         <StyledProjectBlock>
             <OptionWrapper>

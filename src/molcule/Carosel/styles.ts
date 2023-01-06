@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-export const StyledFavoriteBusCarosel = styled.div`
+export const StyledCarosel = styled.div`
   width: 100%;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  overflow: hidden;
 `;
 
 export const TextFlexContainer = styled.div`
@@ -16,18 +18,17 @@ export const TextFlexContainer = styled.div`
 
 export const FlexContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 0.5rem;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
+  // gap: 0.5rem;
 `;
 
-export const FavoriteBusContainer = styled.div`
+export const CaroselContainer = styled.div`
   width: 100%;
   padding: 0.5rem;
   border: 1px solid black;
   border-radius: 1rem;
-  background-color: white;
 `;
 
 export const EmptyBusContainer = styled.div`

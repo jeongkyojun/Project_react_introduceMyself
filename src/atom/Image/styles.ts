@@ -9,6 +9,7 @@ export const ImageWrapper = styled.div<ImageStyleTypes>`
     `}
   width: ${({ width }) => width};
   height: ${({ height }) => height || '100%'};
+  flex: none;
 `;
 
 export const StyledImage = styled.img<ImageTypes>`

@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Image from '../../atom/Image';
 import Text from '../../atom/Text';
 import {
   EmptyBusBodyContainer,
   EmptyBusContainer,
-  FavoriteBusContainer,
+  CaroselContainer,
   FlexContainer,
-  StyledFavoriteBusCarosel,
+  StyledCarosel,
   TextFlexContainer,
 } from './styles';
 import { CaroselTypes } from './types';
@@ -17,50 +18,44 @@ import { CaroselTypes } from './types';
  * @author jojo
  */
 const Carosel = ({
-  busNum,
-  previousBusStop,
-  nextBusStop,
-  errorMessage,
-  busLikes,
-  clickRefreshHandler,
-  clickPlusHandler,
-  clickBusNumHandler,
+  nowNum,
+  Images,
+  textChildren,
+  clickNumHandler,
 }: CaroselTypes) => {
   return (
-    <StyledFavoriteBusCarosel>
+    <StyledCarosel>
       <TextFlexContainer>
         <Text size={1.1} bold>
-          자주 타는 버스 정보
+          {textChildren?(textChildren):('미리보기')}
         </Text>
       </TextFlexContainer>
-      {busLikes?.length ? (
         <FlexContainer>
-          <FaChevronLeft size={30} />
-          <FavoriteBusContainer>
-            {/* <FavoriteBusHeader
-              busNum={busNum}
-              clickRefreshHandler={clickRefreshHandler}
-              clickPlusHandler={clickPlusHandler}
-            />
-            {previousBusStop ? (
-              <FavoriteBusBody
-                previousBusStop={previousBusStop}
-                nextBusStop={nextBusStop}
-              />
-            ) : (
-              <EmptyBusBodyContainer>{errorMessage}</EmptyBusBodyContainer>
-            )} */}
-          </FavoriteBusContainer>
+          <FaChevronLeft 
+            color='white'
+            size={30} 
+            onClick={()=>clickNumHandler(-1)}
+          />
+          <CaroselContainer>
+            {
+              Images?(
+                Images.map((image)=>{
+                  return(
+                    <Image src={image.src} alt={image.alt}/>
+                  )
+                })
+              ):(
+                <Text>이미지가 존재하지 않습니다.</Text>
+              )
+            }
+          </CaroselContainer>
           <FaChevronRight
+            color='white'
             size={30}
+            onClick={()=>clickNumHandler(+1)}
           />
         </FlexContainer>
-      ) : (
-        <EmptyBusContainer>
-          <Text>즐겨찾기 등록한 버스가 없거나 운영 시간이 아닙니다</Text>
-        </EmptyBusContainer>
-      )}
-    </StyledFavoriteBusCarosel>
+    </StyledCarosel>
   );
 };
 

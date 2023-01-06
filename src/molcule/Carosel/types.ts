@@ -1,11 +1,10 @@
+import { ImageTypes } from "../../atom/Image/types";
+
 export interface CaroselTypes {
-    busNum?: number;
-    previousBusStop?: string;
-    nextBusStop?: string;
-    errorMessage?: string;
+    nowNum: number;
+    textChildren?:string;
+    Images?:ImageTypes[];
     busLikes?: number[];
-    clickRefreshHandler?: () => void;
-    clickPlusHandler?: () => void;
-    clickBusNumHandler?: (direction: string) => void;
+    clickNumHandler: (direction: number) => void;
   }
   

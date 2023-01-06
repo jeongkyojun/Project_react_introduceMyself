@@ -10,6 +10,7 @@ const Header = () => {
 
   const navigate = useNavigate();
   const moveTest = ()=>{
+    console.log("click");
     navigator(navigate).test;
   }
 
@@ -17,10 +18,10 @@ const Header = () => {
     <HeaderWrapper>
       <StyledHeader />
       <MenuWrapper>
-        <img src="https://ghchart.rshah.org/kyojun2002" alt="github" />
+        {/* <img src="https://ghchart.rshah.org/kyojun2002" alt="github" /> */}
       </MenuWrapper>
       <ButtonWrapper>
-        <Button clickHandler={moveTest}>test로 이동</Button>
+        <Button clickHandler={moveTest} isText>test로 이동</Button>
       </ButtonWrapper>
     </HeaderWrapper>
   );
