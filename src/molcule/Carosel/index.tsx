@@ -12,13 +12,7 @@ import {
 } from './styles';
 import { CaroselTypes } from './types';
 
-/**
- * 자주 타는 버스 정보 캐러셀
- *
- * @author jojo
- */
 const Carosel = ({
-  nowNum,
   Images,
   textChildren,
   clickNumHandler,
