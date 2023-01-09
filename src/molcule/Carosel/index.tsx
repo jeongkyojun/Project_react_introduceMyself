@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Image from '../../atom/Image';
 import Text from '../../atom/Text';
@@ -17,6 +17,12 @@ const Carosel = ({
   textChildren,
   clickNumHandler,
 }: CaroselTypes) => {
+
+  const [current, setCurrent] = useState(0);
+  const [style, setStyle] = useState({marginLeft: `-${current}00%`});
+  const imgSize = useRef(Images?.length);
+  
+
   return (
     <StyledCarosel>
       <TextFlexContainer>
